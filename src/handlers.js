@@ -55,7 +55,7 @@ const addBookHandler = (request, h) => {
   const isSuccess = books.filter((book) => book.id === id).length > 0;
 
   if (isSuccess) {
-    return response = h.response({
+    return h.response({
       status: "success",
       message: "Buku berhasil ditambahkan",
       data: {
